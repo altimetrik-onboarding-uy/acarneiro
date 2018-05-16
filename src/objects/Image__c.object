@@ -56,80 +56,34 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Content__c</fullName>
+        <fullName>Post__c</fullName>
         <externalId>false</externalId>
-        <label>Content</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Published_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Published Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Status__c</fullName>
-        <defaultValue>&quot;Draft&quot;</defaultValue>
-        <externalId>false</externalId>
-        <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Draft</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Published</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Under Review</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ready</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Tags__c</fullName>
-        <externalId>false</externalId>
-        <label>Tags</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>WriterId__c</fullName>
-        <externalId>false</externalId>
-        <label>Writer</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Posts</relationshipLabel>
-        <relationshipName>Post_Writer</relationshipName>
+        <label>Post</label>
+        <referenceTo>Post__c</referenceTo>
+        <relationshipLabel>Images</relationshipLabel>
+        <relationshipName>Images</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
     <gender>Feminine</gender>
-    <label>Post</label>
+    <label>Image</label>
     <nameField>
-        <label>Post Title</label>
+        <label>Image Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Posts</pluralLabel>
+    <pluralLabel>Images</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

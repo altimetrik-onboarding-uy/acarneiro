@@ -17,6 +17,7 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>Image__c</members>
         <members>Post__c</members>
         <name>CustomObject</name>
     </types>

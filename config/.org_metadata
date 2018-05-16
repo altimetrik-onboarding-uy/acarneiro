@@ -7103,6 +7103,183 @@
             {
                 "createdById": "005f4000001jBKuAAM",
                 "createdByName": "Alvaro Carneiro",
+                "createdDate": "2018-05-16T19:37:08.000Z",
+                "fileName": "objects/Image__c.object",
+                "fullName": "Image__c",
+                "id": "CustomObject.Image__c",
+                "lastModifiedById": "005f4000001jBKuAAM",
+                "lastModifiedByName": "Alvaro Carneiro",
+                "lastModifiedDate": "2018-05-16T19:37:08.000Z",
+                "manageableState": "unmanaged",
+                "type": "CustomObject",
+                "leaf": false,
+                "title": "Image__c",
+                "checked": false,
+                "text": "Image__c",
+                "cls": "folder",
+                "level": 2,
+                "isFolder": true,
+                "children": [
+                    {
+                        "checked": false,
+                        "level": 3,
+                        "id": "CustomObject.Image__c.actionOverrides",
+                        "text": "actionOverrides",
+                        "title": "actionOverrides",
+                        "isFolder": true,
+                        "children": [
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Accept",
+                                "title": "Accept",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Accept",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "CancelEdit",
+                                "title": "CancelEdit",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.CancelEdit",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Clone",
+                                "title": "Clone",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Clone",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Delete",
+                                "title": "Delete",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Delete",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Edit",
+                                "title": "Edit",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Edit",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Follow",
+                                "title": "Follow",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Follow",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "List",
+                                "title": "List",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.List",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "New",
+                                "title": "New",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.New",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "SaveEdit",
+                                "title": "SaveEdit",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.SaveEdit",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Tab",
+                                "title": "Tab",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.Tab",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "View",
+                                "title": "View",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.actionOverrides.View",
+                                "select": false
+                            }
+                        ],
+                        "select": false,
+                        "cls": "folder"
+                    },
+                    {
+                        "checked": false,
+                        "level": 3,
+                        "id": "CustomObject.Image__c.fields",
+                        "text": "fields",
+                        "title": "fields",
+                        "isFolder": true,
+                        "children": [
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Post__c",
+                                "title": "Post__c",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.fields.Post__c",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Source__c",
+                                "title": "Source__c",
+                                "isFolder": false,
+                                "id": "CustomObject.Image__c.fields.Source__c",
+                                "select": false
+                            }
+                        ],
+                        "select": false,
+                        "cls": "folder"
+                    }
+                ],
+                "select": false
+            },
+            {
+                "createdById": "005f4000001jBKuAAM",
+                "createdByName": "Alvaro Carneiro",
                 "createdDate": "1970-01-01T00:00:00.000Z",
                 "fileName": "objects/Lead.object",
                 "fullName": "Lead",
@@ -9968,6 +10145,16 @@
                                 "title": "Status__c",
                                 "isFolder": false,
                                 "id": "CustomObject.Post__c.fields.Status__c",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Tags__c",
+                                "title": "Tags__c",
+                                "isFolder": false,
+                                "id": "CustomObject.Post__c.fields.Tags__c",
                                 "select": false
                             },
                             {
