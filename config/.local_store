@@ -1,1 +1,16 @@
-{}
+{
+    "Post__c.object": {
+        "createdById": "005f4000001jBKuAAM",
+        "createdByName": "Alvaro Carneiro",
+        "createdDate": "2018-05-16T18:58:29.000Z",
+        "fileName": "unpackaged/objects/Post__c.object",
+        "fullName": "Post__c",
+        "id": "01If40000026XqPEAU",
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "lastModifiedDate": "2018-05-16T18:58:29.000Z",
+        "manageableState": "unmanaged",
+        "type": "CustomObject",
+        "mmState": "clean"
+    }
+}
