@@ -12,7 +12,7 @@
         "ApexComponent",
         "ApexPage",
         "ApexTrigger",
-        "CustomObject",
-        "StaticResource"
+        "AuraDefinitionBundle",
+        "CustomObject"
     ]
 }

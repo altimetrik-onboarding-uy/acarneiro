@@ -26,5 +26,19 @@
         "manageableState": "unmanaged",
         "type": "CustomObject",
         "mmState": "clean"
+    },
+    "asd.cls": {
+        "createdById": "005f4000001jBKuAAM",
+        "createdByName": "Alvaro Carneiro",
+        "createdDate": "2018-05-17T13:22:48.000Z",
+        "fileName": "unpackaged/classes/asd.cls",
+        "fullName": "asd",
+        "id": "01pf400000El0XCAAZ",
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "lastModifiedDate": "2018-05-17T13:22:48.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }

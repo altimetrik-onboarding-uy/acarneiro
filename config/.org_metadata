@@ -19,7 +19,30 @@
         "cls": "folder",
         "select": false,
         "expanded": false,
-        "children": []
+        "children": [
+            {
+                "createdById": "005f4000001jBKuAAM",
+                "createdByName": "Alvaro Carneiro",
+                "createdDate": "2018-05-17T13:22:48.000Z",
+                "fileName": "classes/asd.cls",
+                "fullName": "asd",
+                "id": "ApexClass.asd",
+                "lastModifiedById": "005f4000001jBKuAAM",
+                "lastModifiedByName": "Alvaro Carneiro",
+                "lastModifiedDate": "2018-05-17T13:22:48.000Z",
+                "manageableState": "unmanaged",
+                "type": "ApexClass",
+                "leaf": true,
+                "title": "asd",
+                "checked": false,
+                "text": "asd",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            }
+        ]
     },
     {
         "id": "ApexComponent",
@@ -78,6 +101,27 @@
         "xmlName": "ApexTrigger",
         "text": "ApexTrigger",
         "key": "ApexTrigger",
+        "level": 1,
+        "hasChildTypes": false,
+        "isFolder": true,
+        "inFolder": false,
+        "cls": "folder",
+        "select": false,
+        "expanded": false,
+        "children": []
+    },
+    {
+        "id": "AuraDefinitionBundle",
+        "type": {
+            "directoryName": "aura",
+            "inFolder": false,
+            "metaFile": false,
+            "xmlName": "AuraDefinitionBundle"
+        },
+        "title": "AuraDefinitionBundle",
+        "xmlName": "AuraDefinitionBundle",
+        "text": "AuraDefinitionBundle",
+        "key": "AuraDefinitionBundle",
         "level": 1,
         "hasChildTypes": false,
         "isFolder": true,
@@ -12991,27 +13035,5 @@
                 "select": false
             }
         ]
-    },
-    {
-        "id": "StaticResource",
-        "type": {
-            "directoryName": "staticresources",
-            "inFolder": false,
-            "metaFile": true,
-            "suffix": "resource",
-            "xmlName": "StaticResource"
-        },
-        "title": "StaticResource",
-        "xmlName": "StaticResource",
-        "text": "StaticResource",
-        "key": "StaticResource",
-        "level": 1,
-        "hasChildTypes": false,
-        "isFolder": true,
-        "inFolder": false,
-        "cls": "folder",
-        "select": false,
-        "expanded": false,
-        "children": []
     }
 ]
