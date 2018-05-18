@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:handler event="c:NavigationItemChanged" action="{!c.navigationItemChanged}" />
+    <aura:attribute name="item" type="String" default="writers" />
+
+    <section>
+
+        <aura:if isTrue="{!v.item == 'writers'}">
+            
+            <section id="writers">
+                <h1>Writers</h1>
+
+                <c:BloggistPostForm />
+                
+            </section>
+
+        <aura:set attribute="else">
+            
+            <section id="posts">
+                <h1>Posts</h1>
+            </section>
+        
+        </aura:set>
+        </aura:if>
+
+    </section>
+</aura:component>
