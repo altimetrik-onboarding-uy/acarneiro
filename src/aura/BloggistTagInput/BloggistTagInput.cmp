@@ -1,0 +1,25 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="label" type="String" default="" />
+    <aura:attribute name="tags" type="String[]" default="[]" />
+
+    <div>
+
+        <aura:if isTrue="{!v.label != ''}">
+            {!v.label}
+        </aura:if>
+
+        <aura:if isTrue="{!v.tags.length}">
+            <br />
+            <c:BloggistTagList tags="{!v.tags}" editable="true" onTagDeleted="{!c.onTagDeleted}" />
+            <br />
+        </aura:if>
+
+        <div class="slds-form-element">
+            <div class="slds-form-element__control slds-input-has-fixed-addon">
+                <input type="text" name="taginput" class="slds-input" onkeyup="{!c.onTagInputChanged}" />
+            </div>
+        </div>
+    </div>
+
+
+</aura:component>

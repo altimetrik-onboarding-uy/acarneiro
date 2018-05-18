@@ -1,0 +1,20 @@
+.THIS {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 219, 218);
+    word-break: break-word;
+}
+
+.THIS .badge {
+    background: #eee;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.THIS .close {
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size:16px;
+}

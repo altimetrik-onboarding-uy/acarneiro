@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:registerEvent name="onTagDeleted" type="c:TagDeletionEvent" />
+
+    <aura:attribute name="tags" type="String[]" />
+    <aura:attribute name="editable" type="Boolean" default="false" />
+    
+    <div>
+        <aura:iteration items="{!v.tags}" var="item" indexVar="i">
+            <span class="badge">
+                {!item}
+                <aura:if isTrue="{!v.editable}">
+                    <span class="close" data-tagid="{!i}" onclick="{!c.removeTag}">&times;</span>
+                </aura:if>
+            </span>
+        </aura:iteration>
+    </div>
+
+</aura:component>
