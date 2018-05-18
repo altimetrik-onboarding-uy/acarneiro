@@ -9,8 +9,9 @@
 
 			if (newTag.length) {
 				tags.push(newTag);
-				console.log('Pushed '+newTag);
 				component.set('v.tags', tags);
+
+				helper.emitNewTagList(component, tags);
 			}
 		}
 	},
@@ -20,5 +21,7 @@
 		const newTags = component.get('v.tags').filter((tag, tagidx) => tagidx != tagid);
 
 		component.set('v.tags', newTags);
+
+		helper.emitNewTagList(component, newTags);
 	}
 })

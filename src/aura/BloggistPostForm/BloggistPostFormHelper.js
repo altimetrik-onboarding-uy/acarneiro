@@ -1,4 +1,5 @@
 ({
-	helperMethod : function() {
+	logState : function(component) {
+		
 	}
 })

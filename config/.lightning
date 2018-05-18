@@ -508,5 +508,22 @@
         },
         "DefType": "EVENT",
         "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf4000001GsWmCAK"
+        },
+        "Id": "0Adf4000001GsWmCAK",
+        "AuraDefinitionBundleId": "0Abf4000000eItRCAU",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf4000000eItRCAU"
+            },
+            "DeveloperName": "TagListSharing"
+        },
+        "DefType": "EVENT",
+        "Format": "XML"
     }
 ]

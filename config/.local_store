@@ -8,7 +8,7 @@
         "id": "0Adf4000001GmpACAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T15:19:56.000Z",
+        "lastModifiedDate": "2018-05-18T20:10:55.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -50,7 +50,7 @@
         "id": "0Adf4000001GmpFCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-17T19:24:19.000Z",
+        "lastModifiedDate": "2018-05-18T20:11:43.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -92,7 +92,7 @@
         "id": "0Adf4000001Gs5PCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T18:56:13.000Z",
+        "lastModifiedDate": "2018-05-18T19:20:43.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -148,7 +148,7 @@
         "id": "0Adf4000001Gs5UCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T18:47:47.000Z",
+        "lastModifiedDate": "2018-05-18T19:21:52.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -163,6 +163,20 @@
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
         "lastModifiedDate": "2018-05-17T19:54:34.000Z",
+        "manageableState": "unmanaged",
+        "type": "AuraDefinitionBundle",
+        "mmState": "clean"
+    },
+    "TagListSharing/TagListSharing.evt.undefined": {
+        "createdById": "005f4000001jBKuAAM",
+        "createdByName": "Alvaro Carneiro",
+        "createdDate": "2018-05-18T19:18:44.000Z",
+        "fileName": "unpackaged/aura/TagListSharing/TagListSharing.evt",
+        "fullName": "TagListSharing/TagListSharing.evt",
+        "id": "0Adf4000001GsWmCAK",
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "lastModifiedDate": "2018-05-18T19:19:27.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -218,7 +232,7 @@
         "id": "0Adf4000001GqsxCAC",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T19:07:03.000Z",
+        "lastModifiedDate": "2018-05-18T19:20:30.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -288,7 +302,7 @@
         "id": "0Adf4000001Gs5oCAC",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T18:56:32.000Z",
+        "lastModifiedDate": "2018-05-18T19:24:45.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -386,7 +400,7 @@
         "id": "0Adf4000001GmpKCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-17T19:24:19.000Z",
+        "lastModifiedDate": "2018-05-18T19:59:48.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"

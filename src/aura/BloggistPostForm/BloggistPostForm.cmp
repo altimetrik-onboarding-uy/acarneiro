@@ -1,14 +1,14 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
-    <aura:attribute name="post" type="String" default="{'sobjectType': 'Post__c', 'Name': '', 'Content__c': '', 'Tags__c': ''}" />
+    <aura:attribute name="post" type="Post__c" default="{'sobjectType': 'Post__c', 'Name': '', 'Content__c': '', 'Tags__c': '', 'WriterId__c': 0}" />
     
     <form>
         <lightning:input aura:id="postform" name="Title" label="Title" value="{!v.post.Name}" />
 
         <lightning:textarea aura:id="postform" name="Content" label="Content" value="{!v.post.Content__c}" />
 
-        <c:BloggistTagList label="Tags" />
+        <c:BloggistTagInput label="Tags" onTagsUpdated="{!c.onTagsUpdated}" />
     </form>
-<!--
+<!-- 
     Content	Content__c	Text Area(255)		False	
 Created By	CreatedById	Lookup(User)		False	
 Last Modified By	LastModifiedById	Lookup(User)		False	

@@ -2,6 +2,8 @@
     <aura:attribute name="label" type="String" default="" />
     <aura:attribute name="tags" type="String[]" default="[]" />
 
+    <aura:registerEvent name="onTagsUpdated" type="c:TagListSharing" />
+
     <div>
 
         <aura:if isTrue="{!v.label != ''}">
