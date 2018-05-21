@@ -19,7 +19,30 @@
         "cls": "folder",
         "select": false,
         "expanded": false,
-        "children": []
+        "children": [
+            {
+                "createdById": "005f4000001jBKuAAM",
+                "createdByName": "Alvaro Carneiro",
+                "createdDate": "2018-05-21T13:13:06.000Z",
+                "fileName": "classes/BloggistController.cls",
+                "fullName": "BloggistController",
+                "id": "ApexClass.BloggistController",
+                "lastModifiedById": "005f4000001jBKuAAM",
+                "lastModifiedByName": "Alvaro Carneiro",
+                "lastModifiedDate": "2018-05-21T17:13:56.000Z",
+                "manageableState": "unmanaged",
+                "type": "ApexClass",
+                "leaf": true,
+                "title": "BloggistController",
+                "checked": false,
+                "text": "BloggistController",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            }
+        ]
     },
     {
         "id": "ApexComponent",
@@ -116,7 +139,7 @@
                 "id": "AuraDefinitionBundle.BloggistContent",
                 "lastModifiedById": "005f4000001jBKuAAM",
                 "lastModifiedByName": "Alvaro Carneiro",
-                "lastModifiedDate": "2018-05-18T20:14:22.000Z",
+                "lastModifiedDate": "2018-05-18T20:19:46.000Z",
                 "manageableState": "unmanaged",
                 "type": "AuraDefinitionBundle",
                 "leaf": true,
@@ -160,7 +183,7 @@
                 "id": "AuraDefinitionBundle.BloggistPostForm",
                 "lastModifiedById": "005f4000001jBKuAAM",
                 "lastModifiedByName": "Alvaro Carneiro",
-                "lastModifiedDate": "2018-05-18T20:11:43.000Z",
+                "lastModifiedDate": "2018-05-21T17:40:31.000Z",
                 "manageableState": "unmanaged",
                 "type": "AuraDefinitionBundle",
                 "leaf": true,

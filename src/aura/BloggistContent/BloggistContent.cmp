@@ -19,7 +19,19 @@
         <aura:set attribute="else">
             
             <section id="posts">
-                <h1>Posts</h1>
+                <h2>Posts</h2>
+
+                <hr />
+
+                <lightning:listView aura:id="listViewPosts"
+                    objectApiName="Post__c"
+                    listName="Posts"
+                    rows="5"
+                    showActionBar="false"
+                    enableInlineEdit="true"
+                    showRowLevelActions="false"
+                />
+                        
             </section>
         
         </aura:set>

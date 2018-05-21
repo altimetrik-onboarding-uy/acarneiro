@@ -112,16 +112,15 @@
     </fields>
     <fields>
         <fullName>WriterId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Writer</label>
         <referenceTo>Contact</referenceTo>
         <relationshipLabel>Posts</relationshipLabel>
         <relationshipName>Post_Writer</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <type>Lookup</type>
     </fields>
     <gender>Feminine</gender>
     <label>Post</label>
@@ -131,5 +130,5 @@
     </nameField>
     <pluralLabel>Posts</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

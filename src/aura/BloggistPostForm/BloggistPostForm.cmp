@@ -1,13 +1,30 @@
-<aura:component implements="flexipage:availableForAllPageTypes">
-    <aura:attribute name="post" type="Post__c" default="{'sobjectType': 'Post__c', 'Name': '', 'Content__c': '', 'Tags__c': '', 'WriterId__c': 0}" />
-    
-    <form>
+<aura:component controller="BloggistController" implements="flexipage:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+    <aura:attribute name="post" type="Post__c" default="{'sobjectType': 'Post__c', 'Id': 0, 'Name': '', 'Content__c': '', 'T    ags__c': '', 'WriterId__c': 0, 'Status__c': 0}" />
+    <aura:attribute name="options" type="List" default="[]" />
+    <aura:attribute name="contacts" type="Contact[]" default="[]" />
+
         <lightning:input aura:id="postform" name="Title" label="Title" value="{!v.post.Name}" />
 
         <lightning:textarea aura:id="postform" name="Content" label="Content" value="{!v.post.Content__c}" />
 
         <c:BloggistTagInput label="Tags" onTagsUpdated="{!c.onTagsUpdated}" />
-    </form>
+        
+        <lightning:select label="State" name="State" value="{!v.post.State__c}">
+            <aura:iteration items="{!v.options}" var="item">
+                <option text="{!item.label}" value="{!item.value}" />
+            </aura:iteration>
+        </lightning:select>
+
+        <lightning:select label="Writer" name="Writer" value="{!v.post.WriterId__c}">
+            <aura:iteration items="{!v.contacts}" var="contact">
+                <option text="{!contact.Name}" value="{!contact.Id}" selected="{!contact.Id == v.post.WriterId__c}" />
+            </aura:iteration>
+        </lightning:select>
+        <br />
+        <lightning:button onclick="{!c.savePost}" label="Save" />
+
 <!-- 
     Content	Content__c	Text Area(255)		False	
 Created By	CreatedById	Lookup(User)		False	

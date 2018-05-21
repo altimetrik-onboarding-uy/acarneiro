@@ -8,7 +8,7 @@
         "id": "0Adf4000001GmpACAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T20:10:55.000Z",
+        "lastModifiedDate": "2018-05-21T17:39:38.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -50,7 +50,7 @@
         "id": "0Adf4000001GmpFCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T20:11:43.000Z",
+        "lastModifiedDate": "2018-05-21T17:37:53.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -274,7 +274,7 @@
         "id": "0Adf4000001Gn8cCAC",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T15:06:37.000Z",
+        "lastModifiedDate": "2018-05-18T20:19:46.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -316,7 +316,7 @@
         "id": "0Adf4000001GmpPCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-17T19:24:19.000Z",
+        "lastModifiedDate": "2018-05-21T17:10:53.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -400,7 +400,7 @@
         "id": "0Adf4000001GmpKCAS",
         "lastModifiedById": "005f4000001jBKuAAM",
         "lastModifiedByName": "Alvaro Carneiro",
-        "lastModifiedDate": "2018-05-18T19:59:48.000Z",
+        "lastModifiedDate": "2018-05-21T17:40:31.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -459,6 +459,20 @@
         "lastModifiedDate": "2018-05-16T19:37:08.000Z",
         "manageableState": "unmanaged",
         "type": "CustomObject",
+        "mmState": "clean"
+    },
+    "BloggistController.cls": {
+        "createdById": "005f4000001jBKuAAM",
+        "createdByName": "Alvaro Carneiro",
+        "createdDate": "2018-05-21T13:13:06.000Z",
+        "fileName": "unpackaged/classes/BloggistController.cls",
+        "fullName": "BloggistController",
+        "id": "01pf400000EnKpgAAF",
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "lastModifiedDate": "2018-05-21T17:13:56.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
         "mmState": "clean"
     }
 }
