@@ -1,8 +1,15 @@
 ({
+	initialize: function(component, event, helper) {
+		component.set('v.selectedItem', localStorage.getItem('v.item') || 'writers');
+	},
 	navigationItemChanged : function(component, event, helper) {
-		const ev = $A.get('e.c:NavigationItemChanged');
+		const item = event.getSource().get('v.name');
+		
+		helper.navigate(item);
+	},
+	editPost: function(component, event, helper) {
+		const postid = event.getParam('postid');
 
-		ev.setParam('item', event.getSource().get('v.name'));
-		ev.fire();
+		helper.navigate('writers');
 	}
 })

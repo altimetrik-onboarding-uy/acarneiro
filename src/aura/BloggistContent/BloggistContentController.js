@@ -1,6 +1,12 @@
 ({
+	initialize: function(component, event, helper) {
+		component.set('v.item', localStorage.getItem('v.item') || 'writers');
+	},
 	navigationItemChanged : function(component, event, helper) {
-		console.log(`Navigation item changed to: ${event.getParam('item')}`);
-		component.set('v.item', event.getParam('item'));
+		helper.resetPost(component);
+		helper.setNavigationItem(component, event.getParam('item'))
+	},
+	setEditingPost: function(component, event, helper) {
+		helper.findPost(component, event.getParam('postid'));
 	}
 })

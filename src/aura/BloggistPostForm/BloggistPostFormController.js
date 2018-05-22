@@ -14,8 +14,16 @@
 		component.set('v.post', post);
 	},
 
-	savePost: function(component, event, helper) {
-		console.log('Save!');
-		helper.savePost(component, event);
+	onSaveClicked: function(component, event, helper) {
+		const valid = component.find('postform').reduce((validSoFar, input) => {
+
+			input.showHelpMessageIfInvalid();
+
+			return validSoFar && input.get('v.validity').valid;
+		}, true);
+
+		if ( ! valid) return;
+
+		helper.savePost(component);
 	}
 })

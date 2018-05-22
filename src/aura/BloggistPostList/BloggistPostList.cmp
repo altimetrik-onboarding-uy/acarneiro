@@ -1,0 +1,56 @@
+<aura:component controller="BloggistController" implements="flexipage:availableForAllPageTypes">
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+    <aura:registerEvent name="StartEditingPostEvent" type="c:StartEditingPostEvent" />
+
+    <aura:attribute name="posts" type="Post__c[]" default="[]" />
+
+    <a href="javascript:void(0)" style="display: block;text-align:right" onclick="{!c.initialize}">Refresh</a>
+    
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="Title">Title</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Tags">Tags</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Writer">Writer</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Status">Status</div>
+                </th>
+                <th scole="col">
+                    <div class="slds-truncate" title="Actions">Actions</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.posts}" var="post">
+                    <tr>
+                        <td>
+                            <div class="slds-truncate" title="{!post.Name}"><a href="javascript:void(0);">{!post.Name}</a></div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="{!post.Tags__c}">{!post.Tags__c}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="{!post.WriterId__c}">{!post.WriterId__r.Name}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="{!post.Status__c}">{!post.Status__c}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate">
+                                <a href="javascript:void()">View</a> - <a href="javascript:void()" onclick="{!c.editPost}" data-postid="{!post.Id}">Edit</a>
+                            </div>
+                        </td>
+                    </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+
+</aura:component>

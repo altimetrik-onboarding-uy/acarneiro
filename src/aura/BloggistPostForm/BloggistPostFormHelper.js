@@ -27,15 +27,21 @@
 
 		$A.enqueueAction(api);
 	},
-	savePost: function(component, event) {
+	savePost: function(component) {
 		const api = component.get('c.savePost');
 
 		const post = JSON.parse(JSON.stringify(component.get('v.post')));
 
+		if (post.Id === 0) {
+			delete post.Id;
+		}
+
+		console.dir(post);
+
 		api.setParam('post', post);
 
 		api.setCallback(this, response => {
-			const state = response.getstate();
+			const state = response.getState();
 			console.log('Yeah');
 
 			if (state === 'SUCCESS') {
