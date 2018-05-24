@@ -130,30 +130,7 @@
         "cls": "folder",
         "select": false,
         "expanded": false,
-        "children": [
-            {
-                "createdById": "005f4000001jBKuAAM",
-                "createdByName": "Alvaro Carneiro",
-                "createdDate": "2018-05-21T19:39:13.000Z",
-                "fileName": "triggers/NotifyUserManagerOnPostCreation.trigger",
-                "fullName": "NotifyUserManagerOnPostCreation",
-                "id": "ApexTrigger.NotifyUserManagerOnPostCreation",
-                "lastModifiedById": "005f4000001jBKuAAM",
-                "lastModifiedByName": "Alvaro Carneiro",
-                "lastModifiedDate": "2018-05-21T20:50:33.000Z",
-                "manageableState": "unmanaged",
-                "type": "ApexTrigger",
-                "leaf": true,
-                "title": "NotifyUserManagerOnPostCreation",
-                "checked": false,
-                "text": "NotifyUserManagerOnPostCreation",
-                "cls": "",
-                "level": 2,
-                "isFolder": false,
-                "children": [],
-                "select": false
-            }
-        ]
+        "children": []
     },
     {
         "id": "AuraDefinitionBundle",
