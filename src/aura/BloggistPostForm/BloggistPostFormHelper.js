@@ -32,7 +32,7 @@
 
 		const post = JSON.parse(JSON.stringify(component.get('v.post')));
 
-		if (post.Id === 0) {
+		if (post.Id === 0 || post.Id === null) {
 			delete post.Id;
 		}
 

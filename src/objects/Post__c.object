@@ -51,17 +51,18 @@
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Content__c</fullName>
         <externalId>false</externalId>
         <label>Content</label>
-        <required>false</required>
+        <length>131072</length>
         <trackTrending>false</trackTrending>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
     </fields>
     <fields>
         <fullName>Published_Date__c</fullName>
@@ -124,6 +125,11 @@
     </fields>
     <gender>Feminine</gender>
     <label>Post</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Post Title</label>
         <type>Text</type>
@@ -131,4 +137,19 @@
     <pluralLabel>Posts</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Only_user_manager_can_set_post_to_ready</fullName>
+        <active>true</active>
+        <description>Only the manager of the user can set post states to ready</description>
+        <errorConditionFormula>($User.Id &lt;&gt; CreatedBy.ManagerId) &amp;&amp; (ISPICKVAL(Status__c, &apos;Ready&apos;))</errorConditionFormula>
+        <errorMessage>Post can only be set to ready by the manager</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>newly_created_cannot_be_published</fullName>
+        <active>true</active>
+        <description>A newly created Post cannot be ready to publish or published directly</description>
+        <errorConditionFormula>ISNEW() &amp;&amp;  (ISPICKVAL(Status__c,&apos;Published&apos;) || ISPICKVAL(Status__c,&apos;Ready&apos;))</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Cannot be published without being approved first</errorMessage>
+    </validationRules>
 </CustomObject>

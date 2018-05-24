@@ -1,4 +1,3 @@
-
 trigger NotifyUserManagerOnPostCreation on Post__c (before update, before insert) {
 
     User[] users = [SELECT Id, Name, ManagerId FROM User WHERE Id=:UserInfo.getUserId() LIMIT 1];
