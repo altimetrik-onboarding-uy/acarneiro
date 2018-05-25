@@ -145,6 +145,12 @@
         <errorMessage>Post can only be set to ready by the manager</errorMessage>
     </validationRules>
     <validationRules>
+        <fullName>Posts_can_only_be_approved_when_ready</fullName>
+        <active>true</active>
+        <errorConditionFormula>( ! ISPICKVAL(PRIORVALUE(Status__c), &apos;Ready&apos;) &amp;&amp; ISPICKVAL(Status__c, &apos;Published&apos;))</errorConditionFormula>
+        <errorMessage>Posts can only be published when ready</errorMessage>
+    </validationRules>
+    <validationRules>
         <fullName>newly_created_cannot_be_published</fullName>
         <active>true</active>
         <description>A newly created Post cannot be ready to publish or published directly</description>

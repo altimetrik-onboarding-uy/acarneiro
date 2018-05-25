@@ -133,6 +133,71 @@
         "children": []
     },
     {
+        "id": "ApprovalProcess",
+        "type": {
+            "directoryName": "approvalProcesses",
+            "inFolder": false,
+            "metaFile": false,
+            "suffix": "approvalProcess",
+            "xmlName": "ApprovalProcess"
+        },
+        "title": "ApprovalProcess",
+        "xmlName": "ApprovalProcess",
+        "text": "ApprovalProcess",
+        "key": "ApprovalProcess",
+        "level": 1,
+        "hasChildTypes": false,
+        "isFolder": true,
+        "inFolder": false,
+        "cls": "folder",
+        "select": false,
+        "expanded": false,
+        "children": [
+            {
+                "createdById": "005f4000001jBKuAAM",
+                "createdByName": "Alvaro Carneiro",
+                "createdDate": "2018-05-22T19:14:00.000Z",
+                "fileName": "approvalProcesses/Post__c.Post_Creation_Approval.approvalProcess",
+                "fullName": "Post__c.Post_Creation_Approval",
+                "id": "ApprovalProcess.Post__c.Post_Creation_Approval",
+                "lastModifiedById": "005f4000001jBKuAAM",
+                "lastModifiedByName": "Alvaro Carneiro",
+                "lastModifiedDate": "2018-05-24T17:10:18.000Z",
+                "type": "ApprovalProcess",
+                "leaf": true,
+                "title": "Post__c.Post_Creation_Approval",
+                "checked": false,
+                "text": "Post__c.Post_Creation_Approval",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            },
+            {
+                "createdById": "005f4000001jBKuAAM",
+                "createdByName": "Alvaro Carneiro",
+                "createdDate": "2018-05-24T17:25:09.000Z",
+                "fileName": "approvalProcesses/Post__c.Post_review.approvalProcess",
+                "fullName": "Post__c.Post_review",
+                "id": "ApprovalProcess.Post__c.Post_review",
+                "lastModifiedById": "005f4000001jBKuAAM",
+                "lastModifiedByName": "Alvaro Carneiro",
+                "lastModifiedDate": "2018-05-24T17:49:59.000Z",
+                "type": "ApprovalProcess",
+                "leaf": true,
+                "title": "Post__c.Post_review",
+                "checked": false,
+                "text": "Post__c.Post_review",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            }
+        ]
+    },
+    {
         "id": "AuraDefinitionBundle",
         "type": {
             "directoryName": "aura",
@@ -10840,6 +10905,16 @@
                                 "title": "Only_user_manager_can_set_post_to_ready",
                                 "isFolder": false,
                                 "id": "CustomObject.Post__c.validationRules.Only_user_manager_can_set_post_to_ready",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Posts_can_only_be_approved_when_ready",
+                                "title": "Posts_can_only_be_approved_when_ready",
+                                "isFolder": false,
+                                "id": "CustomObject.Post__c.validationRules.Posts_can_only_be_approved_when_ready",
                                 "select": false
                             },
                             {

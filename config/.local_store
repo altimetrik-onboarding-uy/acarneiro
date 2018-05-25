@@ -629,6 +629,19 @@
         "type": "CustomApplication",
         "mmState": "clean"
     },
+    "Post__c.Post_review.approvalProcess": {
+        "createdById": "005f4000001jBKuAAM",
+        "createdByName": "Alvaro Carneiro",
+        "createdDate": "2018-05-24T17:25:09.000Z",
+        "fileName": "unpackaged/approvalProcesses/Post__c.Post_review.approvalProcess",
+        "fullName": "Post__c.Post_review",
+        "id": "04af40000009XacAAE",
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "lastModifiedDate": "2018-05-24T17:49:59.000Z",
+        "type": "ApprovalProcess",
+        "mmState": "clean"
+    },
     "BloggistController.cls": {
         "createdById": "005f4000001jBKuAAM",
         "createdByName": "Alvaro Carneiro",

@@ -12,6 +12,7 @@
         "ApexComponent",
         "ApexPage",
         "ApexTrigger",
+        "ApprovalProcess",
         "AuraDefinitionBundle",
         "CustomApplication",
         "CustomObject",
