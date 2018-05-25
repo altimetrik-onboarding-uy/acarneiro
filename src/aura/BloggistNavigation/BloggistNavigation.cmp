@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+    <aura:registerEvent name="NavigationItemChanged" type="c:NavigationItemChanged" />
+    <aura:handler event="c:StartEditingPostEvent" action="{!c.editPost}" />
+    
+    <aura:attribute name="selectedItem" type="String" default="writers" />
+
+    <lightning:verticalNavigation selectedItem="{!v.selectedItem}">
+        <lightning:verticalNavigationItem label="Writers" name="writers" onclick="{!c.navigationItemChanged}" />
+        <lightning:verticalNavigationItem label="Posts" name="posts" onclick="{!c.navigationItemChanged}" />
+    </lightning:verticalNavigation>
+        
+</aura:component>

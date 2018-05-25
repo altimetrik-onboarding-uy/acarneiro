@@ -1,0 +1,21 @@
+{
+    "projectName": "Proyecto environ",
+    "username": "acarneiro@altimetrik.com",
+    "id": "2a7d0250-590e-11e8-ab87-97c63353ce73",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na59.salesforce.com",
+    "workspace": "C:\\Users\\acarneiro\\Documents\\sf",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "ApprovalProcess",
+        "AuraDefinitionBundle",
+        "CustomApplication",
+        "CustomObject",
+        "CustomTab"
+    ]
+}

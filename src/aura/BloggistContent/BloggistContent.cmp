@@ -1,0 +1,39 @@
+<aura:component controller="BloggistController" implements="flexipage:availableForAllPageTypes">
+
+    
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+    <aura:handler event="c:NavigationItemChanged" action="{!c.navigationItemChanged}" />
+    <aura:handler event="c:StartEditingPostEvent" action="{!c.setEditingPost}" />
+    
+    <aura:attribute name="post" type="Post__c" default="{'sobjectType': 'Post__c', 'Id': 0, 'Name': '', 'Content__c': '', 'Tags__c': '', 'WriterId__c': 0, 'Status__c': 0, 'unknown_custom_field': 0}" />
+    <aura:attribute name="item" type="String" default="writers" />
+
+    <section>
+
+        <aura:if isTrue="{!v.item == 'writers'}">
+            
+            <section id="writers">
+                <h2 class="slds-text-heading_large">Create a post</h2>
+
+                <hr />
+
+                <c:BloggistPostForm post="{!v.post}" />
+                
+            </section>
+
+        <aura:set attribute="else">
+            
+            <section id="posts">
+                <h2 class="slds-text-heading_large">Post list</h2>
+
+                <hr />
+
+                <c:BloggistPostList />
+                        
+            </section>
+        
+        </aura:set>
+        </aura:if>
+
+    </section>
+</aura:component>
