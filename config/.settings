@@ -16,6 +16,8 @@
         "AuraDefinitionBundle",
         "CustomApplication",
         "CustomObject",
-        "CustomTab"
+        "CustomTab",
+        "PathAssistant",
+        "StaticResource"
     ]
 }
