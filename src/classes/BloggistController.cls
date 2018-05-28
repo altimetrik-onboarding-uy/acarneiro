@@ -33,8 +33,8 @@ public with sharing	 class BloggistController {
 	}
 
 	@AuraEnabled
-	public static Post__c savePost(Post__c post) {
-		upsert post;
+	public static Post__c updatePost(Post__c post) {
+		update post;
 
 		return post;
 	}
