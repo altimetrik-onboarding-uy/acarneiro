@@ -921,5 +921,37 @@
         "manageableState": "unmanaged",
         "type": "PathAssistant",
         "mmState": "clean"
+    },
+    "NotifyPostManagers.cls": {
+        "id": "01pf400000FsfQKAAZ",
+        "name": "NotifyPostManagers",
+        "createdDate": "2018-05-28T19:45:06.000+0000",
+        "createdById": "005f4000001jBKuAAM",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedDate": "2018-05-29T12:56:13.000+0000",
+        "fullName": "NotifyPostManagers",
+        "fileName": "unpackaged/classes/NotifyPostManagers.cls",
+        "createdByName": "Alvaro Carneiro",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "NotifyPostManagersBatch.cls": {
+        "id": "01pf400000FshuCAAR",
+        "name": "NotifyPostManagersBatch",
+        "createdDate": "2018-05-28T20:12:27.000+0000",
+        "createdById": "005f4000001jBKuAAM",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000001jBKuAAM",
+        "lastModifiedDate": "2018-05-29T13:19:59.000+0000",
+        "fullName": "NotifyPostManagersBatch",
+        "fileName": "unpackaged/classes/NotifyPostManagersBatch.cls",
+        "createdByName": "Alvaro Carneiro",
+        "lastModifiedByName": "Alvaro Carneiro",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
