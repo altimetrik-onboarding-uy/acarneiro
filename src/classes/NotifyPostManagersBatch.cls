@@ -5,22 +5,49 @@ global class NotifyPostManagersBatch implements Database.Batchable<sObject> {
 	}
 
    	global void execute(Database.BatchableContext BC, List<Post__c> scope) {
-		   // key is the manager Id
-		   Map<Id, List<Post__c>> postsToApprove = new Map<Id, List<Post__c>>();
+		// key is the manager Id, this is used to group posts by their correspondent approver
+		Map<Id, List<Post__c>> postsToApprove = new Map<Id, List<Post__c>>();
+		// iterate over each post
+		for (Post__c post : scope) {
+			// list of posts to be approved by this manager
+			List<Post__c> toApprove = postsToApprove.get(post.CreatedBy.Manager.Id);
+			//if there's no post list create one
+			if (toApprove == null) {
+				toApprove = new List<Post__c>();
+			}
+			// and add the current post to the list
+			toApprove.add(post);
+			// override the list of posts to approve by the manager
+			postsToApprove.put(post.CreatedBy.Manager.Id, toApprove);
+		}
 
-		   for (Post__c post : scope) {
-			   List<Post__c> toApprove = postsToApprove.get(post.CreatedBy.Manager.Id);
+		// iterate over all lists of posts (again, they are grouped by the same approver)
+		for (List<Post__c> postGroups : postsToApprove.values()) {
+			String managerName = postGroups[0].CreatedBy.Manager.Name;
+			String managerEmail = postGroups[0].CreatedBy.Manager.Email;
 
-			   if (toApprove == null) {
-				   toApprove = new List<Post__c>();
-			   }
-				toApprove.add(post);
-				postsToApprove.put(post.CreatedBy.Manager.Id, toApprove);
-		   }
+			// <Create the mail body containing the names of the post to aprove>
+			String body = 'Hello, ' + managerName + '.\n';
+			body = body + 'This is a reminder you have the following posts to approve: ';
 
-		   for (List<Post__c> postGroups : postsToApprove.values()) {
+			List<String> postTitles = new List<String>();
+			
+			for (Post__c pos : postGroups) {
+				postTitles.add('"'+pos.Name+'"');
+			}
+			body = body + String.join(postTitles, ', ')+'.\n';
+			// </Create the mail body containing the names of the post to aprove>
 
-		   }
+			Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+			// Set recipients to two contact IDs.
+			// Replace IDs with valid record IDs in your org.
+			message.toAddresses = new String[] { managerEmail };
+			message.optOutPolicy = 'FILTER';
+			message.subject = 'Opt Out Test Message';
+			message.plainTextBody = 'This is the message body.';
+			Messaging.SingleEmailMessage[] messages = new List<Messaging.SingleEmailMessage> {message};
+			Messaging.sendEmail(messages);
+		}
 	}
 	
 	global void finish(Database.BatchableContext BC) {
