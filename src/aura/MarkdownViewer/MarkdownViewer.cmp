@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+    <aura:attribute name="content" type="String" default="" />
+    <aura:attribute name="parsed" type="String" default="" />
+
+    <ltng:require scripts="{!join(',', $Resource.markdown)}" afterScriptsLoaded="{!c.onload}" />
+
+    <div>
+        <section class="markdown-result">
+            <aura:unescapedHtml value="{!v.parsed}" />
+        </section>
+    </div>
+
+</aura:component>

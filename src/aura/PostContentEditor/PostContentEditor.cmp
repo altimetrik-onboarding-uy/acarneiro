@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" controller="BloggistController">
+
+
+    <aura:attribute name="recordId" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+    <aura:attribute name="content" type="String" default="" />
+
+    <div>
+        <section class="column6">
+            <lightning:textarea value="{!v.content}" />
+
+            <lightning:button label="Save" onclick="{!c.savePost}" />
+        </section>
+        <section class="column6">
+            <c:MarkdownViewer content="{!v.content}" /> 
+        </section>
+
+        <div class="clear"></div>
+    </div>
+
+</aura:component>

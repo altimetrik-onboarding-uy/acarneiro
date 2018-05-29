@@ -1,0 +1,63 @@
+.THIS b, .THIS strong {
+    font-weight: bold !important;
+}
+.THIS i, .THIS em {
+    font-style: italic !important;
+}
+
+.THIS h1 {
+    font-size: 30px;
+}
+
+.THIS h2 {
+    font-size: 25px;
+}
+
+.THIS h3 {
+    font-size: 22px;
+}
+
+.THIS h4 {
+    font-size: 16px;
+}
+
+.THIS h5 {
+    font-size: 11px;
+}
+
+.THIS h6 {
+    font-size: 7px;
+}
+
+.THIS table {
+    width: 100%;
+}
+
+.THIS table tr td, .THIS table tr th {
+    border: 1px solid #eee;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.THIS table tr th {
+    color: navy;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.THIS table tr:hover td {
+    background: #fafafa;
+}
+
+.THIS [align=left] {
+    text-align:left;
+}
+
+.THIS [align=right] {
+    text-align:right;
+}
+
+.THIS [align=center] {
+    text-align:center;
+}

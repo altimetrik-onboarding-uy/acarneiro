@@ -21,7 +21,18 @@
         <name>ApprovalProcess</name>
     </types>
     <types>
-        <members>*</members>
+        <members>BloggistContent</members>
+        <members>BloggistNavigation</members>
+        <members>BloggistPostForm</members>
+        <members>BloggistPostList</members>
+        <members>BloggistTagInput</members>
+        <members>BloggistTagList</members>
+        <members>MarkdownViewer</members>
+        <members>NavigationItemChanged</members>
+        <members>PostContentEditor</members>
+        <members>StartEditingPostEvent</members>
+        <members>TagDeletionEvent</members>
+        <members>TagListSharing</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -36,6 +47,14 @@
     <types>
         <members>*</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PathAssistant</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
     </types>
     <version>36.0</version>
 </Package>
