@@ -42,9 +42,8 @@ global class NotifyPostManagersBatch implements Database.Batchable<sObject> {
 			// Set recipients to two contact IDs.
 			// Replace IDs with valid record IDs in your org.
 			message.toAddresses = new String[] { managerEmail };
-			message.optOutPolicy = 'FILTER';
-			message.subject = 'Opt Out Test Message';
-			message.plainTextBody = 'This is the message body.';
+			message.subject = 'You have ('+postGroups.size()+') posts to approve';
+			message.plainTextBody = body;
 			Messaging.SingleEmailMessage[] messages = new List<Messaging.SingleEmailMessage> {message};
 			Messaging.sendEmail(messages);
 		}
