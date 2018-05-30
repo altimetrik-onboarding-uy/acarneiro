@@ -12,6 +12,11 @@
     padding: 15px;
 }
 
+.THIS section.column6 > .help {
+    font-size: 9px;
+    color: #666;
+}
+
 .THIS section.column6 button {
     display: block;
     width: 100%;

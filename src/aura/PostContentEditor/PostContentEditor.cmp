@@ -1,6 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" controller="BloggistController">
 
-
     <aura:attribute name="recordId" type="String" />
 
     <aura:handler name="init" value="{!this}" action="{!c.initialize}" />
@@ -9,9 +8,16 @@
 
     <div>
         <section class="column6">
-            <lightning:textarea value="{!v.content}" />
+            <textarea onkeyup="{!c.onEditorKeyUp}">{!v.content}</textarea>
 
             <lightning:button label="Save" onclick="{!c.savePost}" />
+
+            <span class="help">
+                Ctrl + B: Bold<br /> 
+                Ctrl + I: Italic<br />
+                Ctrl + L: Inline code<br />
+                Ctrl + Shift + L: Block of code              
+            </span>
         </section>
         <section class="column6">
             <c:MarkdownViewer content="{!v.content}" /> 
