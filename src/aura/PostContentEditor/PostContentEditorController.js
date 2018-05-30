@@ -24,13 +24,14 @@
 	},
 
 	onEditorKeyUp: function(component, event, helper) {
-		window.event = event;
-
 		const textarea = event.target;
 
 		if (event.ctrlKey) {
+			// get the text that's before the user selection
 			const start = textarea.value.substr(0, event.target.selectionStart);
+			// get the selected text
 			let selected = textarea.value.substr(event.target.selectionStart, event.target.selectionEnd-event.target.selectionStart);
+			// get the text that's after the user selection
 			const end = textarea.value.substr(event.target.selectionEnd);
 
 			let sorround = (function() {
@@ -42,16 +43,19 @@
 				return '';
 			})();
 
-			// If the selected text is already sorrounded by the character (style) we want to add to the text
-			if (selected.substr(0, sorround) == sorround && selected.substr(-sorround.length) == sorround) {
-				// then do the opposite, remove those characters (style)
-				console.log('Before', selected);
-				selected = selected.substr(sorround.length, selected.length-sorround.length*2);
-				console.log('After', 	selected);
-				sorround = '';
+			// Do this logic only if there's selected text and `sorround` is not empty (`sorround` not being empty means
+			// that we want to add some style)
+			if (sorround.length && selected.length) {
+				// if the text we selected is already sorrounded by the characters we want to add
+				if (selected.substr(0, sorround.length) == sorround && selected.substr(-sorround.length) == sorround) {
+					// then do the opposite, remove those characters (remove the style)
+					selected = selected.substr(sorround.length, selected.length-sorround.length*2);
+					// and empty `sorround` variable so it will not affect in the following lines
+					sorround = '';
+				}
+
+				textarea.value = start+sorround+selected+sorround+end;
 			}
-			// if there's no selected text then do not add unnecessary characters
-			if (selected.length) textarea.value = start+sorround+selected+sorround+end;
 		}
 
 		component.set('v.content', textarea.value);
